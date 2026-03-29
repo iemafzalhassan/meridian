@@ -22,3 +22,5 @@ go.work.sum
 .gemini/
 .windsurf/
 .opencode/
+.github/
+.planning/
