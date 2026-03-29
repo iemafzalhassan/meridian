@@ -1,0 +1,24 @@
+# Build artifacts
+/bin/
+*.exe
+*.test
+*.out
+go.work
+go.work.sum
+
+# Local secrets / overrides (use .meridian.yaml.example)
+.meridian.yaml
+.env
+.env.*
+
+# OS
+.DS_Store
+
+# Local editor & agent workspaces (not part of the shipped product)
+.cursor/
+.agent/
+.claude/
+.codex/
+.gemini/
+.windsurf/
+.opencode/

@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Meridian",
+  "description": "Find your place in open source.",
+  "version": "0.2.0",
+  "permissions": ["storage"],
+  "host_permissions": ["https://github.com/*"],
+  "background": {
+    "service_worker": "src/background.ts",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js": ["src/content.ts"]
+    }
+  ],
+  "action": {
+    "default_title": "Meridian"
+  }
+}

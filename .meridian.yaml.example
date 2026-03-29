@@ -1,0 +1,28 @@
+llm:
+  provider: ollama
+  model: llama3.2
+  ollama_url: http://localhost:11434
+  openrouter_key: ${MERIDIAN_OPENROUTER_KEY}
+  timeout: 30s
+  retry_count: 2
+
+embeddings:
+  provider: ollama
+  model: nomic-embed-text
+  timeout: 30s
+  retry_count: 2
+
+qdrant:
+  url: http://localhost:6334
+  collection: meridian_projects
+  timeout: 30s
+  retry_count: 2
+  embedding_dims: 768
+
+github:
+  token: ${MERIDIAN_GITHUB_TOKEN}
+  timeout: 30s
+  retry_count: 2
+
+logging:
+  level: info
